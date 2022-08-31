@@ -168,9 +168,16 @@ let cityFunction = () => {
         min.appendChild(document.createTextNode(`Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}`))
         forcastCard.appendChild(max)
       
+        
+          if (forcastDiv.childNodes[7]) {
+            forcastDiv.removeChild(forcastDiv.childNodes[1])
+            
+          }
+      
+
       })
 
-
+      
 
     })
     .catch(function (error) {
