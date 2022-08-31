@@ -128,30 +128,46 @@ let cityFunction = () => {
 
       dayWise.map(eachDay => {
 
-        document.querySelector("#forcastDiv").innerHTML +=
-          `
-                <div class="forcastCard">
-                <div class="day">${moment(eachDay.dt_txt).format("ddd")}</div>
-                <img class="img" src="./img/116.webp" alt="">
-                <div class="min">Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}</div>
-                <div class="max">Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}</div>
-                </div>
-        //         `
-        // let div = `${moment(eachDay.dt_txt).format("ddd")}`
+        const forcastDiv = document.querySelector("#forcastDiv");
+        //   `
+        //         <div class="forcastCard">
+        //         <div class="day">${moment(eachDay.dt_txt).format("ddd")}</div>
+        //         <img class="img" src="./img/116.webp" alt="">
+        //         <div class="min">Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}</div>
+        //         <div class="max">Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}</div>
+        //         </div>
+        // //         `
 
 
-        // let forcastDiv = document.createElement("forcastDiv")
-        // forcastDiv.setAttribute("id", "forcastDiv")
-        // forcastDiv.setAttribute("class", "forcastDiv")
+       
 
-        // let forcastCard = document.createElement("forcastCard")
-        // forcastDiv.appendChild("forcastCard")
-        // forcastCard.setAttribute("class", "forcastCard")
 
-        // let day = document.createElement("day")
-        // forcastCard.appendChild("day")
-        // day.setAttribute("class", "day")
-        // day.appendChild("div")
+        
+
+        let forcastCard = document.createElement("forcastCard")
+        forcastCard.setAttribute("class", "forcastCard")
+        forcastDiv.appendChild(forcastCard)
+
+        let day = document.createElement("div")
+        day.setAttribute("class", "day")
+        day.appendChild(document.createTextNode(`${moment(eachDay.dt_txt).format("ddd")}`))
+        forcastCard.appendChild(day)
+
+        let img = document.createElement("img")
+        img.src = "./img/116.webp";
+        img.setAttribute("class" , "img")
+        forcastCard.appendChild(img)
+
+        let min = document.createElement("div")
+        min.setAttribute("class" , "min")
+        min.appendChild(document.createTextNode(`Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}`))
+        forcastCard.appendChild(min)
+
+        let max = document.createElement("div")
+        min.setAttribute("class" , "max")
+        min.appendChild(document.createTextNode(`Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}`))
+        forcastCard.appendChild(max)
+      
       })
 
 
