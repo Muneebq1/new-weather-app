@@ -7,39 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="forcastDiv" class="forcastDiv">
-        <div class="forcastCard">
-            <div class="day">Tue</div>
-            <img class="img" src="./img/116.webp" alt="">
-            <div class="min">Min: 20</div>
-            <div class="max">Max: 20</div>
-        </div>
-        <div class="forcastCard">
-            <div class="day">Tue</div>
-            <img class="img" src="./img/116.webp" alt="">
-            <div class="min">Min: 20</div>
-            <div class="max">Max: 20</div>
-        </div>
-        <div class="forcastCard">
-            <div class="day">Tue</div>
-            <img class="img" src="./img/116.webp" alt="">
-            <div class="min">Min: 20</div>
-            <div class="max">Max: 20</div>
-        </div>
-        <div class="forcastCard">
-            <div class="day">Tue</div>
-            <img class="img" src="./img/116.webp" alt="">
-            <div class="min">Min: 20</div>
-            <div class="max">Max: 20</div>
-        </div>
-    </div>
 
-    <script src="app.js"></script>
+
+        <div class="nav_div">
+            <h1>Weather App</h1>
+            <form onsubmit="cityFunction(),myFunction() ; return false ">
+                <input type="text" id="forcastInput" placeholder="Enter your City name">
+            </form>
+            <div class="date-time">
+                <div id="date"></div>
+                <div id="time"></div> 
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="result_div">
+                <div class="img_div" style="display: none;">
+                    <img src="" alt="" id="weather_icon">
+                </div>
+                <div class="temp_result">
+                    <div id="tempC"></div>
+                    <div id="tempF"></div>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="left">
+                    <div id="city_name"></div>
+                    <div id="feels_like_c"></div>
+                    <div id="humidity"></div>
+                    <div id="wind_speed_kph"></div>
+                </div>
+                <div class="right">
+                    <div id="last_update"></div>
+                    <div id="weather_condition"></div>
+                    <div id="feels_like_f"></div>
+                    <div id="visibility"></div>
+                    <div id="wind_speed_mph"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="forcastDiv" class="forcastDiv">
+            <!-- <div class="forcastCard">
+            <div class="day">Tue</div>
+            <img class="img" src="./img/116.webp" alt="">
+            <div class="min">Min: 20</div>
+            <div class="max">Max: 20</div>
+        </div> -->
+        </div>
+
+
+        <script src="app.js"></script>
 
 </body>
 
