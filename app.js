@@ -14,6 +14,7 @@ let imgdiv = document.querySelector(`.img_div`);
 let resultdiv = document.querySelector(`.result_div`);
 let subdiv = document.querySelector(`.sub`);
 
+
 let myFunction = () => {
   imgdiv.style.display = "block";
   resultdiv.style.display = "flex";
@@ -31,6 +32,8 @@ let myFunction = () => {
 
       let icon = data.current.condition.icon;
       icon.replace("/file// ");
+
+
       document.getElementById("weather_icon").src = icon;
       document.querySelector("#tempC").innerText = data.current.temp_c + "°C";
 
@@ -139,10 +142,10 @@ let cityFunction = () => {
         // //         `
 
 
-       
 
 
-        
+
+
 
         let forcastCard = document.createElement("forcastCard")
         forcastCard.setAttribute("class", "forcastCard")
@@ -154,31 +157,26 @@ let cityFunction = () => {
         forcastCard.appendChild(day)
 
         let img = document.createElement("img")
-        img.src = "./img/116.webp";
-        img.setAttribute("class" , "img")
+        img.src ="./img/116.webp";
+        img.setAttribute("class", "img")
         forcastCard.appendChild(img)
 
         let min = document.createElement("div")
-        min.setAttribute("class" , "min")
+        min.setAttribute("class", "min")
         min.appendChild(document.createTextNode(`Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}` + "°C"))
         forcastCard.appendChild(min)
 
         let max = document.createElement("div")
-        max.setAttribute("class" , "max")
+        max.setAttribute("class", "max")
         max.appendChild(document.createTextNode(`Max: ${Math.ceil(eachDay.main.temp_max / eachDay.length)}` + "°C"))
         forcastCard.appendChild(max)
-      
-        
-          if (forcastDiv.childNodes[7]) {
-            forcastDiv.removeChild(forcastDiv.childNodes[1])
-            
-          }
-      
 
+
+        if (forcastDiv.childNodes[7]) {
+          forcastDiv.removeChild(forcastDiv.childNodes[1])
+
+        }
       })
-
-      
-
     })
     .catch(function (error) {
       // handle error
