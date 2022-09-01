@@ -160,12 +160,12 @@ let cityFunction = () => {
 
         let min = document.createElement("div")
         min.setAttribute("class" , "min")
-        min.appendChild(document.createTextNode(`Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}`))
+        min.appendChild(document.createTextNode(`Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}` + "°C"))
         forcastCard.appendChild(min)
 
         let max = document.createElement("div")
-        min.setAttribute("class" , "max")
-        min.appendChild(document.createTextNode(`Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}`))
+        max.setAttribute("class" , "max")
+        max.appendChild(document.createTextNode(`Max: ${Math.ceil(eachDay.main.temp_max / eachDay.length)}` + "°C"))
         forcastCard.appendChild(max)
       
         
