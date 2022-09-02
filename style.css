@@ -35,7 +35,14 @@ body {
     height: 100%;
     width: 48%;
   }
-
+  
+  .weather_app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+  }
 
 .forcastDiv {
     /* border: 1px solid white; */
@@ -139,7 +146,7 @@ body {
   
   
    #forcastInput {
-    margin-left: 40px;
+    /* margin-left: 40px;
     padding-left: 25px;
     margin-top: 1rem;
     background-color: transparent;
@@ -153,7 +160,23 @@ body {
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
     outline: none;
-    text-transform: capitalize;
+    text-transform: capitalize; */
+    
+  margin-left: 40px;
+  padding-left: 25px;
+  margin-top: 1rem;
+  background-color: transparent;
+  height: 70%;
+  width: 100%;
+  border-radius: 30px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0.7;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  outline: none;
+  text-transform: capitalize;
   }
   
   .card>::placeholder {

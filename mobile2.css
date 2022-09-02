@@ -1,0 +1,66 @@
+h1 {
+  font-size: 36px;
+}
+
+img {
+  margin-left: 0.5rem;
+  width: 100px;
+}
+.date-time{
+  display: none;
+}
+
+
+
+.temp_result {
+  font-size: 30px;
+  margin: 2rem 0 0 1rem;
+}
+
+.sub {
+    font-size: 10px;
+  }  
+
+#forcastInput {
+  font-size: 20px;
+  margin-left: 1px;
+  padding-left: 35px;
+}
+.forcastDiv>.forcastCard {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  height: 100px;
+  width: 90px;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  animation: fadeInLeft;
+  animation-duration: 3s;
+}
+
+.forcastDiv>.forcastCard>.day {
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px; 
+   width: 40px;
+   margin-left: 25%;
+   font-weight: 600;
+}
+.img{
+height: 30px;
+width: auto;
+}
+.description{
+  font-size: 12px;
+}
+.min{
+  font-size: 12px;
+}
+.max{
+  font-size: 12px;
+}
