@@ -4,66 +4,71 @@ h1 {
 
 img {
   margin-left: 0.5rem;
-  width: 100px;
+  width: 60%;
 }
-.date-time{
+
+.date-time {
   display: none;
 }
 
-
-
 .temp_result {
-  font-size: 30px;
+  font-size: 36px;
   margin: 2rem 0 0 1rem;
   padding-left: 10px;
 }
 
 .sub {
-    font-size: 10px;
-    padding-left: 10px;
-  }  
+  font-size: 12px;
+  padding-left: 20px;
+}
 
-  #forcastInput {
-    padding-left: 0.5%;
-    text-align: center;
-    opacity: 0.7;
-    margin-left: 0;
-    width: 95%;
-  }
-  
+#forcastInput {
+  padding-left: 0.5%;
+  text-align: center;
+  opacity: 0.7;
+  margin-left: 0;
+  width: 95%;
+}
+
 .forcastDiv>.forcastCard {
- 
-  height: 120px;
-  width: 120px;
-  padding: 2px;
-  margin: 2px;
+
+  height: 180px;
+  padding: 20px;
+  margin: 5px;
   text-align: center;
   animation: fadeInLeft;
   animation-duration: 3s;
 }
 
 .forcastDiv>.forcastCard>.day {
-  font-size: 12px;
+  font-size: 20px;
   background-color: white;
-  border-radius: 10px; 
-   width: 30px;
-   margin-left: 18%;
-   font-weight: 600;
+  border-radius: 10px;
+  width: 60px;
+  font-weight: 600;
+  padding-right: 100;
 }
-.img{
-height: 30px;
-width: auto;
+
+.img {
+
+  height: 70px;
+  width: 70px;
+
 }
-.description{
-  font-size: 10px;
+
+.description {
+  font-size: 18px;
 }
-.min{
-  font-size: 9px;
+
+.min {
+  font-size: 15px;
 }
-.max{
-  font-size: 9px;
+
+.max {
+  font-size: 15px;
 }
-.left{
+
+.left {
   padding-top: 30px;
   line-height: 1.6rem;
 }

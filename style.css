@@ -48,6 +48,19 @@ body {
     /* border: 1px solid white; */
     display: flex;
     
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+.forcastDiv::-webkit-scrollbar {
+display: none;
+/* Chrome */
 }
 
 .forcastDiv>.forcastCard {
