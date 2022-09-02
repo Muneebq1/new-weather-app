@@ -115,7 +115,12 @@ let cityFunction = () => {
               temp_max: sumMaxTemp
             },
             dt_txt: currentEachHour.dt_txt,
-            length: eachDay.length
+            length: eachDay.length,
+            weather: [{
+              icon: currentEachHour.weather[0].icon,
+              description: currentEachHour.weather[0].description,
+            }],
+
           }
         },
           {
@@ -129,23 +134,22 @@ let cityFunction = () => {
 
       console.log("final: ", dayWise)
 
+
+      //                    innerHTML method 
+      //         `
+      //         <div class="forcastCard">
+      //         <div class="day">${moment(eachDay.dt_txt).format("ddd")}</div>
+      //         <img class="img" src="./img/116.webp" alt="">
+      //         <div class="min">Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}</div>
+      //         <div class="max">Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}</div>
+      //         </div>
+      // //         `
+
+
+
       dayWise.map(eachDay => {
 
         const forcastDiv = document.querySelector("#forcastDiv");
-        //   `
-        //         <div class="forcastCard">
-        //         <div class="day">${moment(eachDay.dt_txt).format("ddd")}</div>
-        //         <img class="img" src="./img/116.webp" alt="">
-        //         <div class="min">Min: ${Math.floor(eachDay.main.temp_min / eachDay.length)}</div>
-        //         <div class="max">Max: ${Math.floor(eachDay.main.temp_max / eachDay.length)}</div>
-        //         </div>
-        // //         `
-
-
-
-
-
-
 
         let forcastCard = document.createElement("forcastCard")
         forcastCard.setAttribute("class", "forcastCard")
@@ -157,9 +161,14 @@ let cityFunction = () => {
         forcastCard.appendChild(day)
 
         let img = document.createElement("img")
-        img.src ="./img/116.webp";
+        img.setAttribute("src", `http://openweathermap.org/img/wn/${eachDay.weather[0].icon}@2x.png`)
         img.setAttribute("class", "img")
         forcastCard.appendChild(img)
+
+        let description = document.createElement("div")
+        description.setAttribute("class", "description")
+        description.appendChild(document.createTextNode(`${eachDay.weather[0].description}`))
+        forcastCard.appendChild(description)
 
         let min = document.createElement("div")
         min.setAttribute("class", "min")
