@@ -61,16 +61,6 @@ img {
   margin-bottom: 0.5rem;
 }
 
-
-#city {
-  padding-left: 0.5%;
-  text-align: center;
-  opacity: 0.7;
-  margin-left: 0;
-  width: 95%;
-}
-
-
 #tempF {
   margin-left: 1rem;
 }
@@ -81,3 +71,55 @@ img {
 }
 
 
+#forcastInput {
+  padding-left: 0.5%;
+  text-align: center;
+  opacity: 0.7;
+  margin-left: 0;
+  width: 95%;
+}
+.date-time{
+  display: none;
+}
+.sub {
+  font-size: 20px;
+  padding-left: 20px;
+} 
+.left{
+  padding-top: 30px;
+  line-height: 2rem;
+}
+
+.forcastDiv>.forcastCard>.day {
+  font-size: 22px;
+  background-color: white;
+  border-radius: 10px; 
+   width: 70px;
+   margin-left: 20%;
+   font-weight: 600;
+}
+.forcastDiv>.forcastCard{
+  height: 180px;
+  width: 120px;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  animation: fadeInLeft;
+  animation-duration: 3s;
+}
+.img{
+  height: 60px;
+  width: auto;
+}
+.description{
+  font-size: 20px;
+}
+.min{
+  font-size: 14px;
+}
+.max{
+  font-size: 14px;
+}
+/* .temp_result{
+  font-size:50%;
+} */
