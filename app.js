@@ -181,7 +181,7 @@ let cityFunction = () => {
         forcastCard.appendChild(max)
 
 
-        if (forcastDiv.childNodes[7]) {
+        if (forcastDiv.childNodes[6]) {
           forcastDiv.removeChild(forcastDiv.childNodes[1])
 
         }

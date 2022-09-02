@@ -7,6 +7,7 @@
 }
 h1 {
   text-align: center;
+  font-size: 32px;
 }
 
 form {
@@ -20,10 +21,6 @@ form {
   width: 100%;
   padding: 0;
   margin: 1rem 0 1rem 0;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 10px;
 }
 
 img {
@@ -33,24 +30,11 @@ img {
 
 .temp_result {
   display: flex;
-  font-size: 42px;
+  font-size: 36px;
   margin: 2rem 0 0 1rem;
 }
-
-.sub {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
-  padding: 1rem 0 1rem 0;
-  margin: 1rem 0 1rem 0;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.5px);
-  -webkit-backdrop-filter: blur(7.5px);
-  border-radius: 10px;
-}
-
 .right {
-  margin-left: 0.4rem;
+  margin-left: 5rem;
 }
 
 .left div {
@@ -67,7 +51,7 @@ img {
 
 #city_name,
 #weather_condition {
-  font-size: 26px;
+  font-size: 40px;
 }
 
 
@@ -82,8 +66,8 @@ img {
   display: none;
 }
 .sub {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 18px;
+  padding-left: 40px;
 } 
 .left{
   padding-top: 30px;
@@ -91,34 +75,34 @@ img {
 }
 
 .forcastDiv>.forcastCard>.day {
-  font-size: 22px;
+  font-size: 28px;
   background-color: white;
   border-radius: 10px; 
-   width: 70px;
-   margin-left: 20%;
+   width: 110px;
+   margin-left: 1%;
    font-weight: 600;
 }
 .forcastDiv>.forcastCard{
-  height: 180px;
-  width: 120px;
-  padding: 2px;
-  margin: 5px;
+  height: 240px;
+  width: 180px;
+  padding: 40px;
+  margin: 10px;
   text-align: center;
   animation: fadeInLeft;
   animation-duration: 3s;
 }
 .img{
-  height: 60px;
+  height: 80px;
   width: auto;
 }
 .description{
-  font-size: 20px;
+  font-size: 26px;
 }
 .min{
-  font-size: 14px;
+  font-size: 18px;
 }
 .max{
-  font-size: 14px;
+  font-size: 18px;
 }
 /* .temp_result{
   font-size:50%;
